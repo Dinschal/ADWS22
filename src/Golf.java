@@ -1,8 +1,15 @@
-public class Golf extends Car{
+public class Golf implements Car{
     public Golf() {
-        this.price = 20000;
+    }
+
+    @Override public String toString(){
+        return "\n" + "Golf";
     }
     @Override public double getPrice(){
-        return this.price;
+        return 20000;
+    }
+
+    @Override public boolean checkForDiscount(){
+        return false;
     }
 }

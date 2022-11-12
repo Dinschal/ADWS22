@@ -1,23 +1,10 @@
-public class Car {
+public interface Car {
 
-    protected double price;
-    public Car(){
+//    protected double price;
 
-    }
+  double getPrice();
 
-    public double getPrice()
-    {
-        return this.price;
-    }
+  String toString();
 
-    @Override
-    public String toString() {
-
-        return "\n" + this.getClass().toString();
-    }
-
-    public Car getCar(){
-        return this;
-    }
-
+ boolean checkForDiscount();
 }

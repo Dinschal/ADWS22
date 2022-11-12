@@ -1,5 +1,7 @@
-public class Ausstattung extends Car{
-//    protected Car car;
-//    protected double price;
+public abstract class Ausstattung implements Car{
+    protected Car car;
+    @Override public double getPrice(){
+        return this.car.getPrice();
+    }
 
 }

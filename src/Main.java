@@ -1,25 +1,15 @@
 public class Main {
   public static void main (String[] args){
-      Golf golf = new Golf();
-      EntertainmentSystem es = new EntertainmentSystem(golf);
-//      AutonomousDrive ad = new AutonomousDrive(es);
-      MetallicColor mc = new MetallicColor(es);
+      Car golf = new MetallicColor(new AutonomousDrive(new EntertainmentSystem(new Golf())));
 
-      Touran touran = new Touran();
-      EntertainmentSystem esT = new EntertainmentSystem(touran);
-      AutonomousDrive adT = new AutonomousDrive(esT);
-      MetallicColor mcT = new MetallicColor(adT);
-      ElectricalHybridDrive ehdT = new ElectricalHybridDrive(mcT);
+      Car touran = new ElectricalHybridDrive(new MetallicColor(new AutonomousDrive(new EntertainmentSystem(new Touran()))));
 
+      Car discount = new ElectricalHybridDrive(new AutonomousDrive(new Touran()));
 
-      Touran discount = new Touran();
-      AutonomousDrive adD = new AutonomousDrive(discount);
-      ElectricalHybridDrive ehdD = new ElectricalHybridDrive(adD);
-
-      System.out.println("Touran Discount Preis: " + ehdD.getPrice());
-      System.out.println("Golf: " + mc.getPrice() + "€" );
-      System.out.println("Touran mit allem: " + ehdT.getPrice() + "€");
-      System.out.println(ehdT.toString());
+      System.out.println("Touran Discount Preis: " + discount.getPrice());
+      System.out.println("Golf: " + golf.getPrice() + "€" );
+      System.out.println("Touran mit allem: " + touran.getPrice() + "€");
+      System.out.println(touran);
     }
 
 }

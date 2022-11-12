@@ -1,8 +1,17 @@
-import java.sql.SQLOutput;
 
-public class Touran extends Car{
+public class Touran implements Car{
 
     public Touran() {
-        this.price = 30000;
+
+    }
+    @Override public String toString(){
+        return "\n" + "Touran";
+    }
+    @Override public double getPrice(){
+        return 30000;
+    }
+
+    @Override public boolean checkForDiscount(){
+        return false;
     }
 }
