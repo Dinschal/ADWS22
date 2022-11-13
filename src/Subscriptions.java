@@ -6,7 +6,7 @@ public final class Subscriptions {
     private Subscriptions(){
     }
 
-    public static Subscriptions getSubscriptions(){
+    public static Subscriptions getInstance(){
         if(INSTANCE == null){
             INSTANCE = new Subscriptions();
         }
@@ -15,7 +15,7 @@ public final class Subscriptions {
     public double getSeatHeaterPrice(){
         return seatHeaterPrice;
     }
-    public double getnavigationPreis(){
+    public double getnavigationPrice(){
         return navigationPrice;
     }
     public void setHeaterPrice(double newPrice){
@@ -24,4 +24,5 @@ public final class Subscriptions {
     public void setNavigationPrice(double newPrice){
         this.navigationPrice = newPrice;
     }
+
 }
