@@ -1,4 +1,7 @@
 public class Golf implements Car{
+
+    public boolean naviActive = false;
+    public boolean seatHeaterActive = false;
     public Golf() {
     }
 

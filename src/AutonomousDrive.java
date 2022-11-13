@@ -2,14 +2,9 @@ public class AutonomousDrive extends Ausstattung{
     public Car car;
     public AutonomousDrive(Car car) {
         this.car = car;
-//        this.price = 15000;
-//        checkForDiscount();
-
     }
 
-//    @Override public Car getCar(){
-//        return this.car;
-//    }
+
 
     @Override public double getPrice(){
 
