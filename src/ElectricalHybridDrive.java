@@ -1,5 +1,5 @@
 public class ElectricalHybridDrive extends Ausstattung{
-    public Car car;
+    protected Car car;
     public ElectricalHybridDrive(Car car) {
         this.car = car;
 

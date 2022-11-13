@@ -11,6 +11,7 @@ public class Main {
       Car discount = new ElectricalHybridDrive(new AutonomousDrive(new Touran()));
       discount.buySeatHeater();
 
+      System.out.println(golf + "\n");
       System.out.println("Golf: " + golf.getPrice() + "€" + "\n");
       System.out.println( "Touran Discount Price: " + discount.getPrice() + "€ + " + discount.getSubscriptionPrice() + "€/month" + "\n" );
       System.out.println("Touran with everything: " + touran.getPrice() + "€ + " + touran.getSubscriptionPrice() + "€/month" + "\n");

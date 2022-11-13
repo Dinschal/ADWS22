@@ -1,5 +1,5 @@
 public class MetallicColor extends Ausstattung{
-    public Car car;
+    protected Car car;
     public MetallicColor (Car car) {
         this.car = car;
   }

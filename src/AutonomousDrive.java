@@ -1,5 +1,5 @@
 public class AutonomousDrive extends Ausstattung{
-    public Car car;
+    protected Car car;
     public AutonomousDrive(Car car) {
         this.car = car;
     }

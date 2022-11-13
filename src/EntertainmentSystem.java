@@ -1,5 +1,5 @@
 public class EntertainmentSystem extends Ausstattung{
-    public Car car;
+    protected Car car;
     public EntertainmentSystem(Car car) {
         this.car = car;
     }
