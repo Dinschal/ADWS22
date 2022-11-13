@@ -15,7 +15,7 @@ public final class Subscriptions {
     public double getSeatHeaterPrice(){
         return seatHeaterPrice;
     }
-    public double getnavigationPrice(){
+    public double getNavigationPrice(){
         return navigationPrice;
     }
     public void setHeaterPrice(double newPrice){

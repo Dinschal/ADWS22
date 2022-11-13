@@ -25,7 +25,7 @@ public class Touran implements Car{
             monthlyFee += subscriptions.getSeatHeaterPrice();
         }
         if (this.naviActive){
-            monthlyFee += subscriptions.getnavigationPrice();
+            monthlyFee += subscriptions.getNavigationPrice();
         }
         return monthlyFee;
     }
