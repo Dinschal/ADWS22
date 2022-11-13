@@ -8,8 +8,7 @@ public class Golf implements Car{
     @Override public String toString(){
         return "\n" + "Golf";
     }
-    @Override public double getPrice(){
-        return 20000;
+    @Override public double getPrice(){return 20000;
     }
 
     @Override public boolean checkForDiscount(){

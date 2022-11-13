@@ -1,7 +1,7 @@
 public final class Subscriptions {
     private static Subscriptions INSTANCE;
-    private double sitzheitzungPreis;
-    private double navigationPreis;
+    private double seatHeaterPrice = 17;
+    private double navigationPrice = 10;
 
     private Subscriptions(){
     }
@@ -12,13 +12,16 @@ public final class Subscriptions {
         }
         return INSTANCE;
     }
-    public double getSitzheitzungPreis(){
-        return sitzheitzungPreis;
+    public double getSeatHeaterPrice(){
+        return seatHeaterPrice;
     }
     public double getnavigationPreis(){
-        return navigationPreis;
+        return navigationPrice;
     }
-    public void setHeaterPrice(){
-
+    public void setHeaterPrice(double newPrice){
+        this.seatHeaterPrice = newPrice;
+    }
+    public void setNavigationPrice(double newPrice){
+        this.navigationPrice = newPrice;
     }
 }
